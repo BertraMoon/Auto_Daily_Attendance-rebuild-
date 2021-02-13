@@ -2,11 +2,13 @@ name: 签到
 
 on:
   push:
-    branches: [ ForWorkflow ]
+    branches:
+      - ForWorkflow
   pull_request:
-    branches: [ ForWorkflow ]
+    branches:
+      - ForWorkflow
   schedule:
-    - cron: 30,40,50 16 * * *
+    - cron: '30,40,50 16 * * *'
   watch:
     types: started
 
